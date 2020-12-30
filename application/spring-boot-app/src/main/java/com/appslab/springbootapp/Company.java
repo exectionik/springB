@@ -6,9 +6,9 @@ import javax.persistence.Id;
 @Entity
 public class Company {
     @Id
-    String name;
+    private String name;
     public Company(String name){
-
+    this.name=name;
     }
 
     public String getName() {
