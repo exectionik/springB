@@ -7,11 +7,17 @@ import javax.persistence.Id;
 public class Company {
     @Id
     private String name;
+    
+    public Company(){
+
+    }
     public Company(String name){
-    this.name=name;
+
+        this.name=name;
     }
 
     public String getName() {
+
         return name;
     }
 
