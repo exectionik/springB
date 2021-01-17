@@ -1,8 +1,6 @@
 package com.appslab.springbootapp;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping
@@ -14,10 +12,13 @@ public class CompanyController {
 
 
     @GetMapping("/company")
-    Company company(){
-    Company meno = new Company("Fero");
-    servis.saveCompany(meno);
-    return meno;
+
+    public  void company(Company company){
+
+        company=new Company("Peto");
+        servis.saveCompany(company);
+
     }
+
 
 }
