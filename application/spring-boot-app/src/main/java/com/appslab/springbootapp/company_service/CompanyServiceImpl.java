@@ -1,5 +1,7 @@
-package com.appslab.springbootapp;
+package com.appslab.springbootapp.company_service;
 
+import com.appslab.springbootapp.model.Company;
+import com.appslab.springbootapp.repository.CompanyRepository;
 import org.springframework.stereotype.Service;
 
 @Service
