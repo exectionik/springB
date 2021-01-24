@@ -3,9 +3,7 @@ package com.appslab.springbootapp.controllers;
 import com.appslab.springbootapp.company_service.CompanyService;
 import com.appslab.springbootapp.model.Address;
 import com.appslab.springbootapp.model.Company;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping
@@ -29,6 +27,9 @@ public class CompanyController {
         servis.saveCompany(company);
 
     }
-
+    @PostMapping("/employees")
+    void newEmployee(@RequestBody Company newEmployee) {
+        servis.saveCompany(newEmployee);
+    }
 
 }

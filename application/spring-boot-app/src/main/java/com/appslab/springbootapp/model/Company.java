@@ -18,6 +18,8 @@ public class Company {
     private Address address;
 
 
+    public Company() {
+    }
 
     public Company(String name){
 
