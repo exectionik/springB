@@ -1,8 +1,8 @@
 package com.appslab.springbootapp.controllers;
 
-import com.appslab.springbootapp.company_service.CompanyService;
 import com.appslab.springbootapp.model.Address;
 import com.appslab.springbootapp.model.Company;
+import com.appslab.springbootapp.services.CompanyService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -32,4 +32,5 @@ public class CompanyController {
         servis.saveCompany(newEmployee);
     }
 
-}
+    }
+

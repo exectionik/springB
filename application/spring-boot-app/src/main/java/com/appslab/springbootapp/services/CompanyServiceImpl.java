@@ -1,4 +1,4 @@
-package com.appslab.springbootapp.company_service;
+package com.appslab.springbootapp.services;
 
 import com.appslab.springbootapp.model.Company;
 import com.appslab.springbootapp.repository.CompanyRepository;
